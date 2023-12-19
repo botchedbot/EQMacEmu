@@ -116,6 +116,10 @@ public:
 	void	ChangeLootType(uint32 type);
 	void	AddRaidLooter(const char* looter);
 	void	RemoveRaidLooter(const char* looter);
+	bool	IsRaidLooter(const Client* c);
+	bool	IsRaidLeader(const Client* c);
+	bool	IsRaidLeaderOrLooter(const Client* c);
+	bool	IsRaidLeaderOrGroupLeader(const Client* c);
 
 	//util func
 	//keeps me from having to keep iterating through the list
